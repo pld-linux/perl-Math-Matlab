@@ -10,13 +10,13 @@
 Summary:	Math::Matlab - interface for running Matlab programs from Perl
 Summary(pl):	Math::Matlab - interfejs do uruchamiania programów Matlaba z poziomu Perla
 Name:		perl-Math-Matlab
-Version:	0.02
+Version:	0.04
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5fd505c6195eeb24e9e3c39bdd6a1fe2
+# Source0-md5:	ecdbbcd5f0ef6454db40f93d85366c7f
 %if %{with autodeps}
 BuildRequires:	apache-mod_perl
 BuildRequires:	perl-URI

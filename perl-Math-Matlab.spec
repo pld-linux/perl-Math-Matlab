@@ -38,14 +38,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Math::Matlab package provides an interface for running Matlab
 programs from Perl and capturing the output (what the Matlab program
 prints to STDOUT) into a string. For more information on Matlab see
-The MathWorks web-site at http://www.mathworks.com/ .
+The MathWorks web-site at <http://www.mathworks.com/>.
 
 %description -l pl
 Pakiet Math::Matlab udostêpnia interfejs do uruchamiania programów
 Matlaba z poziomu Perla i przechwytywania wyj¶cia (tego, co programy
 Matlaba wypisuj± na STDOUT) do ³añcucha. Wiêcej informacji o Matlabie
 mo¿na znale¼æ na stronie MathWorks pod adresem
-http://www.mathworks.com/ .
+<http://www.mathworks.com/>.
 
 %package Remote
 Summary:	Math::Matlab::Remote - interface to a remote Matlab process

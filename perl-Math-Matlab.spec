@@ -51,7 +51,7 @@ mo¿na znale¼æ na stronie MathWorks pod adresem
 Summary:	Math::Matlab::Remote - interface to a remote Matlab process
 Summary(pl):	Math::Matlab::Remote - interfejs do zdalnego procesu Matlaba
 Group:		Development/Languages/Perl
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description Remote
 Math::Matlab::Remote implements an interface to a remote Matlab server
@@ -71,7 +71,7 @@ u¿ytkownika i has³o do prostego uwierzytelniania ¿±dania.
 Summary:	Math::Matlab::Server - a Matlab server as a mod_perl content handler
 Summary(pl):	Math::Matlab::Server - serwer Matalaba jako obs³uga tre¶ci dla mod_perla
 Group:		Development/Languages/Perl
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description Server
 Math::Matlab::Server implements a mod_perl content handler which takes

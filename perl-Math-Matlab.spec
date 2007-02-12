@@ -8,7 +8,7 @@
 %define		pdir	Math
 %define		pnam	Matlab
 Summary:	Math::Matlab - interface for running Matlab programs from Perl
-Summary(pl):	Math::Matlab - interfejs do uruchamiania programów Matlaba z poziomu Perla
+Summary(pl.UTF-8):   Math::Matlab - interfejs do uruchamiania programÃ³w Matlaba z poziomu Perla
 Name:		perl-Math-Matlab
 Version:	0.04
 Release:	1
@@ -40,16 +40,16 @@ programs from Perl and capturing the output (what the Matlab program
 prints to STDOUT) into a string. For more information on Matlab see
 The MathWorks web-site at <http://www.mathworks.com/>.
 
-%description -l pl
-Pakiet Math::Matlab udostêpnia interfejs do uruchamiania programów
-Matlaba z poziomu Perla i przechwytywania wyj¶cia (tego, co programy
-Matlaba wypisuj± na STDOUT) do ³añcucha. Wiêcej informacji o Matlabie
-mo¿na znale¼æ na stronie MathWorks pod adresem
+%description -l pl.UTF-8
+Pakiet Math::Matlab udostÄ™pnia interfejs do uruchamiania programÃ³w
+Matlaba z poziomu Perla i przechwytywania wyjÅ›cia (tego, co programy
+Matlaba wypisujÄ… na STDOUT) do Å‚aÅ„cucha. WiÄ™cej informacji o Matlabie
+moÅ¼na znaleÅºÄ‡ na stronie MathWorks pod adresem
 <http://www.mathworks.com/>.
 
 %package Remote
 Summary:	Math::Matlab::Remote - interface to a remote Matlab process
-Summary(pl):	Math::Matlab::Remote - interfejs do zdalnego procesu Matlaba
+Summary(pl.UTF-8):   Math::Matlab::Remote - interfejs do zdalnego procesu Matlaba
 Group:		Development/Languages/Perl
 Requires:	%{name} = %{version}-%{release}
 
@@ -60,16 +60,16 @@ server via the HTTP protocol. The Remote object has the URI of the
 server, a timeout value for the requests and a user name and password
 used for basic authentication of the request.
 
-%description Remote -l pl
+%description Remote -l pl.UTF-8
 Math::Matlab::Remote to implementacja interfejsu do zdalnego serwera
-Matlaba (modu³ Math::Matlab::Server). U¿ywa pakietu LWP do dostêpu do
-serwera za po¶rednictwem protoko³u HTTP. Obiekt Remote zawiera URI do
-serwera, warto¶æ maksymalnego czasu oczekiwania dla ¿±dañ oraz nazwê
-u¿ytkownika i has³o do prostego uwierzytelniania ¿±dania.
+Matlaba (moduÅ‚ Math::Matlab::Server). UÅ¼ywa pakietu LWP do dostÄ™pu do
+serwera za poÅ›rednictwem protokoÅ‚u HTTP. Obiekt Remote zawiera URI do
+serwera, wartoÅ›Ä‡ maksymalnego czasu oczekiwania dla Å¼Ä…daÅ„ oraz nazwÄ™
+uÅ¼ytkownika i hasÅ‚o do prostego uwierzytelniania Å¼Ä…dania.
 
 %package Server
 Summary:	Math::Matlab::Server - a Matlab server as a mod_perl content handler
-Summary(pl):	Math::Matlab::Server - serwer Matalaba jako obs³uga tre¶ci dla mod_perla
+Summary(pl.UTF-8):   Math::Matlab::Server - serwer Matalaba jako obsÅ‚uga treÅ›ci dla mod_perla
 Group:		Development/Languages/Perl
 Requires:	%{name} = %{version}-%{release}
 
@@ -82,14 +82,14 @@ document. The results are the value returned by the object's
 fetch_raw_result() or fetch_result() method, depending whether or not
 the RAW_OUTPUT parameter is true.
 
-%description Server -l pl
-Math::Matlab::Server to implementacja funkcji obs³ugi generowania
-tre¶ci dla mod_perla, przyjmuj±ca z wej¶cia formularza argumenty o
-nazwach CODE, REL_MWD i RAW_OUTPUT, wywo³uj±ca metodê execute()
-obiektu Math::Matlab na serwerze przekazuj±c argumenty CODE i REL_MWD,
-a nastêpnie odsy³aj±ca wyniki jako dokument text/plain. Wyniki to
-warto¶æ zwrócona przez metodê fetch_raw_result() lub fetch_result()
-obiektu, w zale¿no¶ci od warto¶ci parametru RAW_OUTPUT.
+%description Server -l pl.UTF-8
+Math::Matlab::Server to implementacja funkcji obsÅ‚ugi generowania
+treÅ›ci dla mod_perla, przyjmujÄ…ca z wejÅ›cia formularza argumenty o
+nazwach CODE, REL_MWD i RAW_OUTPUT, wywoÅ‚ujÄ…ca metodÄ™ execute()
+obiektu Math::Matlab na serwerze przekazujÄ…c argumenty CODE i REL_MWD,
+a nastÄ™pnie odsyÅ‚ajÄ…ca wyniki jako dokument text/plain. Wyniki to
+wartoÅ›Ä‡ zwrÃ³cona przez metodÄ™ fetch_raw_result() lub fetch_result()
+obiektu, w zaleÅ¼noÅ›ci od wartoÅ›ci parametru RAW_OUTPUT.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

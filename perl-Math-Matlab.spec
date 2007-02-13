@@ -8,7 +8,7 @@
 %define		pdir	Math
 %define		pnam	Matlab
 Summary:	Math::Matlab - interface for running Matlab programs from Perl
-Summary(pl.UTF-8):   Math::Matlab - interfejs do uruchamiania programów Matlaba z poziomu Perla
+Summary(pl.UTF-8):	Math::Matlab - interfejs do uruchamiania programów Matlaba z poziomu Perla
 Name:		perl-Math-Matlab
 Version:	0.04
 Release:	1
@@ -49,7 +49,7 @@ można znaleźć na stronie MathWorks pod adresem
 
 %package Remote
 Summary:	Math::Matlab::Remote - interface to a remote Matlab process
-Summary(pl.UTF-8):   Math::Matlab::Remote - interfejs do zdalnego procesu Matlaba
+Summary(pl.UTF-8):	Math::Matlab::Remote - interfejs do zdalnego procesu Matlaba
 Group:		Development/Languages/Perl
 Requires:	%{name} = %{version}-%{release}
 
@@ -69,7 +69,7 @@ użytkownika i hasło do prostego uwierzytelniania żądania.
 
 %package Server
 Summary:	Math::Matlab::Server - a Matlab server as a mod_perl content handler
-Summary(pl.UTF-8):   Math::Matlab::Server - serwer Matalaba jako obsługa treści dla mod_perla
+Summary(pl.UTF-8):	Math::Matlab::Server - serwer Matalaba jako obsługa treści dla mod_perla
 Group:		Development/Languages/Perl
 Requires:	%{name} = %{version}-%{release}
 

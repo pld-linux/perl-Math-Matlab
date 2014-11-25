@@ -3,10 +3,10 @@
 %bcond_without	autodeps	# don't require packages only for autodeps generation
 %bcond_with	tests		# perform "make test" (requires Matlab installation)
 # matlab			# command to execute matlab
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Math
 %define		pnam	Matlab
+%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Matlab - interface for running Matlab programs from Perl
 Summary(pl.UTF-8):	Math::Matlab - interfejs do uruchamiania programów Matlaba z poziomu Perla
 Name:		perl-Math-Matlab
@@ -17,6 +17,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fcab9a197d49dd5453f9d82de0ca7382
+URL:		http://search.cpan.org/dist/Math-Matlab/
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps}
 BuildRequires:	apache-mod_perl
 BuildRequires:	perl-URI
@@ -26,8 +29,6 @@ BuildRequires:	perl-libwww
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.01
 %endif
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
 #Requires:	matlab
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

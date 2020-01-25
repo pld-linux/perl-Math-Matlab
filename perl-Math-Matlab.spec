@@ -6,7 +6,6 @@
 
 %define		pdir	Math
 %define		pnam	Matlab
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::Matlab - interface for running Matlab programs from Perl
 Summary(pl.UTF-8):	Math::Matlab - interfejs do uruchamiania programów Matlaba z poziomu Perla
 Name:		perl-Math-Matlab
